@@ -1,0 +1,56 @@
+.converter-main {
+  padding: 50px 80px;
+  width: 550px;
+  background-color: rgba($color: #fff, $alpha: 1);
+  border-radius: 10px;
+
+  .converter-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    h2 {
+      color: #2c6edd;
+      font-weight: bolder;
+      text-align: center;
+      margin: 0px auto;
+    }
+
+    .converter-currency-select-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+
+      .conv-arrows {
+        margin: 0 30px;
+      }
+
+      .conv-select {
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+
+    .form-input-label {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .converter-btn[type="submit"] {
+      height: 4em;
+      border-radius: 2em;
+      padding: 15px;
+      letter-spacing: 1px;
+      background-image: linear-gradient(to right, #3477ea, #1c5cc6);
+      border: none;
+      outline: none;
+      color: #fff;
+
+      &.disabled-btn {
+        background-image: linear-gradient(to right, #C2CBD9, #C2CBD9);
+      }
+    }
+  }
+}

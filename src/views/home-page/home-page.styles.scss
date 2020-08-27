@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.home-page-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #2C6EDD 40%, #F6F7F9 40%);
+  
+  .home-page-main {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: #2C6EDD;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    overflow: hidden;
+    height: 600px;
+
+    .info-line {
+      font-weight: bold;
+      &.red-span span {
+        color: red;
+      }
+    }
+  }
+
+  .home-usage-alert{
+    position: absolute;
+    bottom: 10px;
+  }
+}

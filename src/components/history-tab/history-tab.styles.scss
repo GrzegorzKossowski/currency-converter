@@ -1,0 +1,21 @@
+.history-tab-main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: #2c6edd;
+  padding: 10px;
+
+  .history-tab-link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+  }
+
+  .rotate {
+    color: rgba($color: #fff, $alpha: 1);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 10px 5px;
+  }
+}

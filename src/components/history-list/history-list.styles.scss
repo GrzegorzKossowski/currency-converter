@@ -1,0 +1,66 @@
+.history-list-main {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  background-color: rgba($color: #2c6edd, $alpha: 1);
+  color: white;
+  padding: 20px;
+  width: 450px;
+
+  .flex-container {
+    display: flex;
+    flex-flow: column;
+    margin: 30px 0px 20px 5px;
+
+    .flex-header {
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: 1px solid #fff;
+
+      .flex-hcell {
+        // width: 100%;
+        padding: 5px 0;
+        font-weight: bold;
+      }
+    }
+
+    .flex-overflow {
+      overflow: auto;
+      height: 430px;
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba($color: #ffffff, $alpha: 0.4);
+      }
+      &::-webkit-scrollbar-thumb {
+        background: rgba($color: #ffffff, $alpha: 1);
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba($color: rgb(255, 217, 0), $alpha: 1);
+      }
+
+      .flex-trow {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding: 15px 10px;
+
+        .flex-tcell {
+          // width: 100%;
+        }
+      }
+      .flex-empty {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+      }
+    }
+  }
+  .history-list-clearbtn {
+    color: white;
+  }
+}

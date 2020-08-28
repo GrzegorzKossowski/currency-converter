@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./home-page.styles.scss";
-import { Container, Row, Col, Modal, Alert } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Converter from "../../components/converter/Converter";
 import HistoryList from "../../components/history-list/HistoryList";
 import HistoryTab from "../../components/history-tab/HistoryTab";

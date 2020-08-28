@@ -11,7 +11,7 @@ export default class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    // Możesz także zalogować błąd do zewnętrznego serwisu raportowania błędów
+    // Logowanie błędów
     // logErrorToMyService(error, errorInfo);
   }
 

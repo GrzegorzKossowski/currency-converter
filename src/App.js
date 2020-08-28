@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <ErrorBoundary>
+      {/* <ErrorBoundary> */}
         <Switch>
           <Route exact path={['/', '/currency-converter']}>
             <HomePage isHistoryOn={false} />
@@ -17,7 +17,7 @@ function App() {
             <HomePage isHistoryOn={true} />
           </Route>
         </Switch>
-      </ErrorBoundary>
+      {/* </ErrorBoundary> */}
     </div>
   );
 }

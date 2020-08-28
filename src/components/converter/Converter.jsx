@@ -1,21 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./converter.styles.scss";
-// import { Form, Field } from "react-final-form";
 import { Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExchangeAlt } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 import {
-  fetchCurrenciesMock,
-  fetchConvertMock,
   fetchConversionData,
   fetchAllCurrencies,
-  getUsage
 } from "../../api/converter.api";
 import {
-  fetchLocalStorage,
   updateLocalStorage,
-  clearLocalStorage
 } from "../../api/local.api";
 
 const Converter = props => {
@@ -38,8 +32,7 @@ const Converter = props => {
   },[formState.amount])
 
   const getAllCurrencies = () => {
-    fetchCurrenciesMock()
-      // fetchAllCurrencies()
+      fetchAllCurrencies()
       .then(data => {
         const currencies = Object.keys(data.results)
           .map(key => data.results[key].id)
@@ -58,8 +51,7 @@ const Converter = props => {
 
   const handleSubmit = event => {
     event.preventDefault();
-    fetchConvertMock()
-      // fetchConversionData(formState.fromCurrency, formState.toCurrency)
+      fetchConversionData(formState.fromCurrency, formState.toCurrency)
       .then(data => {
         let eRate = Object.values(data)[0];
         let newScore = eRate * formState.amount;

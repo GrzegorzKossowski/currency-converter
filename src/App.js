@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       {/* <ErrorBoundary> */}
         <Switch>
-          <Route exact path={['/', '/currency-converter']}>
+          <Route exact path={['/']}>
             <HomePage isHistoryOn={false} />
           </Route>
-          <Route path='/history'>
+        <Route path={['/history']}>
             <HomePage isHistoryOn={true} />
           </Route>
         </Switch>

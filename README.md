@@ -1,3 +1,13 @@
+## Currency converter (aka Exchange calculator)
+
+[Working demo version](https://grzegorzkossowski.github.io/currency-converter/) on github pages to view it in the browser.
+
+![Currency converter](https://github.com/GrzegorzKossowski/currency-converter/blob/dev/konwerter01.jpg)
+
+![CC with history tab](https://github.com/GrzegorzKossowski/currency-converter/blob/dev/konwerter02.jpg)
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
